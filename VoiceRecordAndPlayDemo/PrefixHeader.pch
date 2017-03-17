@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  VoiceRecordAndPlay
+//
+//  Created by 对河果农 on 17/3/16.
+//  Copyright © 2017年 Orange_zz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//定义一个弱引用
+#define WeakSelf(ws)  __weak __typeof(&*self)ws = self
+
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight  [UIScreen mainScreen].bounds.size.height
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <AdSupport/ASIdentifierManager.h>
+#import "AVFoundation/AVFoundation.h"
+#endif
+
+#import "UIColor+Extetion.h"
+#import "NSDate+ToString.h"
+#import "AppDelegate.h"
+#import "UIView+Show.h"
+#endif /* PrefixHeader_pch */
